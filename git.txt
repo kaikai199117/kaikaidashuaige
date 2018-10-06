@@ -1,0 +1,64 @@
+git add -A
+
+git commit -m ‘’
+
+git push origin 分支
+
+git status
+
+git reset HEAD 撤销add操作
+
+git log
+
+git reset —hard 版本号 		回退版本
+
+先git reset 版本号 文件名 再gitcheckout -- 文件名 回退某个文件
+
+git show 版本号 查看提交详情
+
+git pull origin 分支名
+
+git clone 
+
+git init
+
+git reflog
+
+git checkout —- 文件名  在add之前使用 如果已提交但没push可以先回退 再使用该条命令
+
+ssh-keygen -t rsa -C "youremail@example.com"  生成密钥公钥
+ 
+git branch 分支    
+			git checkout -b 分支 该条命令等同于左边两条命令
+git checkout 分支
+
+git branch
+
+git merge 分支名
+
+git branch -D 分支名
+
+git tag
+
+git tag 标签名
+
+git tag -d 标签名
+
+git config --global user.name "Your Name"
+
+git config --global user.email "email@example.com"
+
+git push origin :分支名  删除远程分支
+
+git branch -r  -d origin/分支名
+
+git config —-list
+
+git init --bare XXXXXX.git
+
+
+
+清空缓存
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'

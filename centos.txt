@@ -1,0 +1,36 @@
+rpm -qa |grep 服务名（比如ssh）  查询是否安装某个服务 qa是已安装的意思
+
+rpm -ivh pm包名（rpm后缀）
+
+yum install XXX 安装软件
+
+yum remove XXX 卸载软件 根据rpm -qa |grep 服务名 查出来的名字卸载
+
+netstat -nlutp 查看已经连接的服务端口
+
+ps -ef 查看进程
+
+service sshd start 或者/etc/init.d/sshd start 启动ssh服务
+
+systemctl status 服务名.service 某个服务是否启动(sshd iptables)
+
+systemctl 所有运行的服务
+
+systemctl enable 服务名.service 开机启动
+
+systemctl disable 服务名.service 开机关闭
+
+systemctl is-enabled 服务名.service 查看是否开机启动
+
+systemctl list-unit-files|grep enabled 查看所有已启动服务
+
+
+—-关闭默认防火墙—-（针对centos7）
+systemctl stop firewalld.service #停止firewall
+systemctl disable firewalld.service #禁止firewall开机启动
+—-关闭默认防火墙—-
+
+Ctrl – a ：移到行首
+Ctrl – e ：移到行尾
+ctrl+k 删除当前光标后面的文字(还有剪切功能)
+Ctrl+w:删除光标前面的单词或者所在单词光标前面的字符
